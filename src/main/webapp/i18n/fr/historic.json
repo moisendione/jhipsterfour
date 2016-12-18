@@ -1,0 +1,26 @@
+{
+    "jhipsterfourApp": {
+        "historic" : {
+            "home": {
+                "title": "Historics",
+                "createLabel": "Créer un nouveau Historic",
+                "createOrEditLabel": "Créer ou éditer un Historic",
+                "search": "Recherche pour Historic"
+            },
+            "created": "Un nouveau Historic a été créé avec l'identifiant {{ param }}",
+            "updated": "Le Historic avec l'identifiant {{ param }} a été mis à jour",
+            "deleted": "Le Historic avec l'identifiant {{ param }} a été supprimé",
+            "delete": {
+                "question": "Etes-vous certain de vouloir supprimer le Historic {{ id }} ?"
+            },
+            "detail": {
+                "title": "Historic"
+            },
+            "creationDate": "Creation Date",
+            "username": "Username",
+            "action": "Action",
+            "tableName": "Table Name",
+            "recordId": "Record Id"
+        }
+    }
+}

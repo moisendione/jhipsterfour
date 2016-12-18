@@ -1,0 +1,39 @@
+
+<div>
+    <h2><span data-translate="jhipsterfourApp.historic.detail.title">Historic</span> {{vm.historic.id}}</h2>
+    <hr>
+    <jhi-alert-error></jhi-alert-error>
+    <dl class="dl-horizontal jh-entity-details">
+        <dt><span data-translate="jhipsterfourApp.historic.creationDate">Creation Date</span></dt>
+        <dd>
+            <span>{{vm.historic.creationDate | date:'medium'}}</span>
+        </dd>
+        <dt><span data-translate="jhipsterfourApp.historic.username">Username</span></dt>
+        <dd>
+            <span>{{vm.historic.username}}</span>
+        </dd>
+        <dt><span data-translate="jhipsterfourApp.historic.action">Action</span></dt>
+        <dd>
+            <span>{{vm.historic.action}}</span>
+        </dd>
+        <dt><span data-translate="jhipsterfourApp.historic.tableName">Table Name</span></dt>
+        <dd>
+            <span>{{vm.historic.tableName}}</span>
+        </dd>
+        <dt><span data-translate="jhipsterfourApp.historic.recordId">Record Id</span></dt>
+        <dd>
+            <span>{{vm.historic.recordId}}</span>
+        </dd>
+    </dl>
+
+    <button type="submit"
+            ui-sref="{{ vm.previousState }}"
+            class="btn btn-info">
+        <span class="glyphicon glyphicon-arrow-left"></span>&nbsp;<span data-translate="entity.action.back"> Back</span>
+    </button>
+
+    <button type="button" ui-sref="historic-detail.edit({id:vm.historic.id})" class="btn btn-primary">
+        <span class="glyphicon glyphicon-pencil"></span>
+        <span class="hidden-xs hidden-sm" data-translate="entity.action.edit"> Edit</span>
+    </button>
+</div>
